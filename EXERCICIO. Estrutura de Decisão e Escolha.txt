@@ -1,0 +1,375 @@
+                                   LISTA DE EXERCÍCIOS 
+
+1- Faça um algoritmo para ler dois números inteiros A e B e informar se A é 
+divisível por B. 
+
+Algoritmo "DIVISIVEL"
+// Disciplina  : Programação
+// Professor   : IZABELLA REZENDE
+// Autor(a)    : FILIPE SANTOS SOUZA
+Var
+A,B:INTEIRO
+
+
+Inicio
+
+   ESCREVAL("DIGITE O VALOR DE A")
+     LEIA(A)
+       ESCREVAL("DIGITE O VALOR DE B")
+         LEIA(B)
+     SE A mod B=0 ENTAO
+      ESCREVAL("O VALOR DE A É DIVISIVEL POR B!")
+   SENAO
+ ESCREVAL("O VALOR DE A NÃO É DIVISIVEL PELO VALOR DE B!")
+  fimse
+Fimalgoritmo
+
+2- Faça um Programa que leia três números e mostre o maior e o menor deles.
+
+Algoritmo " MAIOR E MENOR "
+
+// Disciplina  : Programação
+// Professor   : IZABELLA REZENDE
+// Autor(a)    : FILIPE SANTOS SOUZA
+
+Var
+A1,B2,C3:INTEIRO
+
+Inicio
+
+     ESCREVAL("DIGITE O 1º NUMERO")
+     LEIA(A1)
+     ESCREVAL("DIGITE O 2º NUMERO")
+     LEIA(B2)
+     ESCREVAL("DIGITE O 3º")
+     LEIA(C3)
+     SE (A1>B2) E (A1>C3) E (B2>C3) ENTAO
+      ESCREVAL("MAIOR VALOR: ",A1," E MENOR VALOR: ",C3 )
+      SENAO
+      SE (A1>B2) E (A1>C3) E (C3>B2)ENTAO
+      ESCREVAL("MAIOR VALOR: ",A1 "E MENOR VALOR: ",B2)
+      SENAO
+      SE (B2>A1) E (B2>C3) E (A1>C3)ENTAO
+            ESCREVAL("MAIOR VALOR: ",B2, " E MENOR VALOR: ",C3)
+      SENAO
+      SE (B2>A1) E (B2>C3) E (C3>A1)ENTAO
+      ESCREVAL("MAIOR VALOR: ",B2" E MENOR VALOR: ",A1)
+      SENAO
+      SE (C3>A1) E (C3>B2) E (A1>B2)ENTAO
+      ESCREVAL("MAIOR VALOR: ",C3," E MENOR VALOR: ",B2)
+   SENAO
+  SE (C3>A1) E (C3>B2) E (B2>A1)ENTAO
+ ESCREVAL("MAIOR VALOR: ",C3," E MENOR VALOR: ",A1)
+      FIMSE
+     FIMSE
+   FIMSE
+  FIMSE
+ FIMSE
+FIMSE
+
+Fimalgoritmo.
+
+3-Faça um programa que pergunte o preço de três produtos e informe qual produto 
+você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+
+Algoritmo " PRODUTO DE MENOR VALOR "
+// Disciplina  : Programação
+// Professor   : IZABELLA REZENDE
+// Autor(a)    : FILIPE SANTOS SOUZA
+
+Var
+VP1,VP2,VP3:REAL
+
+Inicio
+
+ESCREVAL("INFORME O VALOR DO PRODUTO A:")
+LEIA(VP1)
+ESCREVAL("INFORME O VALOR DO PRODUTO B:")
+LEIA(VP2)
+ESCREVAL("INFORME O VALOR DO PRODUTO C:")
+LEIA(VP3)
+
+SE (VP1>VP2) E (VP1>VP3) E (VP2>VP3) ENTAO
+      ESCREVAL("VOCÊ DEVE COMPRAR O PRODUTO C, R$ ",VP3:2:2," PORQUÊ É O PRODUTO MAIS BARATO!")
+      SENAO
+      SE (VP1>VP2) E (VP1>VP3) E (VP3>VP2)ENTAO
+      ESCREVAL("VOCÊ DEVE COMPRAR O PRODUTO B, R$",VP2:2:2," PORQUÊ É O PRODUTO MAIS BARATO!")
+      SENAO
+      SE (VP2>VP1) E (VP2>VP3) E (VP1>VP3)ENTAO
+            ESCREVAL("VOCÊ DEVE COMPRAR O PRODUTO C, R$",VP3:2:2," PORQUÊ É O PRODUTO MAIS BARATO!")
+      SENAO
+      SE (VP2>VP1) E (VP2>VP3) E (VP3>VP1)ENTAO
+      ESCREVAL("VOCÊ DEVE COMPRAR O PRODUTO A, R$",VP1:2:2," PORQUÊ É O PRODUTO MAIS BARATO!")
+      SENAO
+      SE (VP3>VP1) E (VP3>VP2) E (VP1>VP2)ENTAO
+      ESCREVAL("VOCÊ DEVE COMPRAR O PRODUTO B, R$",VP2:2:2," PORQUÊ É O PRODUTO MAIS BARATO!")
+   SENAO
+  SE (VP3>VP1) E (VP3>VP2) E (VP2>VP1)ENTAO
+  ESCREVAL("VOCÊ DEVE COMPRAR O PRODUTO A, R$",VP1:2:2," PORQUÊ É O PRODUTO MAIS BARATO!")
+      FIMSE
+     FIMSE
+   FIMSE
+  FIMSE
+ FIMSE
+FIMSE
+
+Fimalgoritmo
+
+4-Faça um Programa que leia três números e mostre-os em ordem decrescente.
+
+Algoritmo "ORDEM DECRESCENTE"
+// Disciplina  : Programação
+// Professor   : IZABELLA REZENDE
+// Autor(a)    : FILIPE SANTOS SOUZA
+
+Var
+N1,N2,N3:INTEIRO
+
+Inicio
+escreval("INFORME O 1º NUMERO")
+ leia(N1)
+  escreval("INFORME O 2º NUMERO")
+   leia(N2)
+     escreval("INFORME O 3º NUMERO")
+       leia(N3)
+       
+          Se (n1 > n2) e (n2 > n3) entao
+	   escreva(n1  n2 n3)
+            senao
+             Se (n1 > n3) e (n3> n2) entao
+	      escreva(n1,n3,n2)
+               senao
+                Se (n2 > n1) e (n1> n3) entao
+                  escreva(n2,n1,n3)
+                   senao
+                     Se (n2 > n3) e (n3> n1) entao
+	              escreva(n2,n3,n1)
+                       senao
+                        Se (n3 > n2) e (n2 > n1) entao
+	                 escreva(n3,n2,n1)
+                          senao
+                           Se (n3 > n1) e (n1> n2) entao
+	                     escreva(n3,n1,n2)
+                               senao
+                           fimse
+                          fimse
+                         fimse
+                      fimse
+                    fimse
+                 fimse
+
+Fimalgoritmo
+
+5_Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-
+matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa 
+Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+
+Algoritmo "TURNO"
+// Disciplina  : Programação
+// Professor   : IZABELLA REZENDE
+// Autor(a)    : FILIPE SANTOS SOUZA
+
+Algoritmo "TURNO"
+
+Var
+
+   TURNO:CARACTERE
+
+
+Inicio
+
+   ESCREVAL("              QUAL TURNO VOCÊ ESTUDA?              ")
+   ESCREVAL("M PARA MATUTINO,V PARA VESPRETINO E N PARA NOTURNO.")
+   LEIA(TURNO)
+   
+   SE (TURNO = "M") OU (TURNO="V") OU (TURNO="N") ENTAO
+     SE (TURNO="M") ENTAO
+        ESCREVAL("BOM DIA")
+     SENAO
+       SE (TURNO="V") ENTAO
+       ESCREVAL("BOA TARDE")
+       SENAO
+       ESCREVA("BOA NOITE")
+       FIMSE
+     FIMSE
+   SENAO
+   ESCREVAL("VALOR INVALIDO!")
+   FIMSE
+Fimalgoritmo
+
+
+6_ Crie um programa que receba o nome de um produto, seu preço e a condição de 
+pagamento (à vista / a prazo). Se o pagamento for à vista o cliente deverá ter um 
+desconto de 5%, se for a prazo um juro de 2%. 
+
+Algoritmo "JUROS E DESCONTO"
+
+Var
+   PRECO,DESCONTO,JUROS,VALORPAGAR:REAL
+   PRODUTO,TIPOPAGTO:CARACTERE
+
+Inicio
+   ESCREVAL("INFORME O NOME DO PRODUTO.")
+   LEIA(PRODUTO)
+   ESCREVAL("INFORME O PRECO DO PRODUTO")
+   LEIA(PRECO)
+   ESCREVAL("O PAGAMENTO SERÁ A VISTA? (S/N)?")
+   LEIA(TIPOPAGTO)
+   SE TIPOPAGTO = "S" ENTAO
+      DESCONTO<-5/100
+      VALORPAGAR<- PRECO - (PRECO*DESCONTO)
+   SENAO
+   se TIPOPAGTO = "N" ENTAO
+      JUROS<-2/100
+      VALORPAGAR<- PRECO +(PRECO*DESCONTO)
+   FIMSE
+FIMSE
+ ESCREVAL("VALOR A PAGAR:",VALORPAGAR:2:2)
+Fimalgoritmo
+
+7_Numa padaria trabalham x pessoas, distribuídas entre a Produção (recebem R$ 
+10 por hora) e Administrativo (recebem R$ 12 a hora).  
+Crie um programa de computador que  leia o setor onde a pessoa trabalha, quantas horas 
+trabalhou por mês e , no fim, deve exibir o salário final a receber.
+
+Algoritmo "SALÁRIO"
+
+Var
+  HORA,SETOR,ADMINISTRATIVO,PRODUCAO,SALARIO:REAL
+  
+
+Inicio
+  ESCREVAL("QUAL SETOR VOCÊ TRABALHA?")
+  LEIA(SETOR)
+  ESCREVAL("QUANTAS HORAS VOCÊ TRABALOU NO MÊS?")
+  LEIA(HORA)
+       PRODUCAO<-10
+       ADMINISTRATIVO<-12
+    SE SETOR = "ADMINISTRATIVO" ENTAO
+       SALARIO<- ADMINISTRATIVO*HORA
+       SENAO
+    SE SETOR = "PRODUCAO" ENTAO
+       SALARIO<- PRODUCAO*HORA
+       FIMSE
+    FIMSE
+    ESCREVAL("O SALÁRIO A RECEBER NO MÊS É: ",SALARIO:2:2)
+Fimalgoritmo
+
+8_As Organizações Tabajara resolveram dar um aumento de salário aos seus 
+colaboradores e lhe contrataram para desenvolver o programa que calculará os reajustes.  
+Faça um programa que recebe o salário de um colaborador e o reajuste segundo o 
+seguinte critério, baseado no salário atual:  
+ salário menor que R$ 280,00 (incluindo) : aumento de 20%  
+ salário maior ou igual que R$ 280,00 e menor que R$ 700,00 : aumento de 15%  
+ salário maior ou igual que R$ 700,00 e menor que R$ 1500,00 : aumento de 10%  
+ salário maior ou igual R$ 1500,00 em diante : aumento de 5%  
+Após o aumento ser realizado, informe na tela:  
+ o salário antes do reajuste;  
+ o percentual de aumento aplicado;  
+ o valor do aumento;  
+ o novo salário, após o aumento.  
+
+
+Algoritmo "AUMENTO_DE_SALARIO"
+
+Var
+  SALARIO,NOVOSALARIO,REAJUSTE,PERCENTUAL:REAL
+
+Inicio
+      ESCREVAL("QUAL O VALOR ATUAL DO SEU SALÁRIO?")
+      LEIA(SALARIO)
+      SE (SALARIO <= 280) ENTAO
+          REAJUSTE<-20
+          NOVOSALARIO<-(SALARIO*REAJUSTE/100)+SALARIO
+      SENAO
+      FIMSE
+      SE (SALARIO > 280) E (SALARIO <= 700)ENTAO
+          REAJUSTE<-15
+          NOVOSALARIO<-(SALARIO*REAJUSTE/100)+SALARIO
+      SENAO
+      FIMSE
+      SE (SALARIO >= 700) E (SALARIO < 1500)ENTAO
+          REAJUSTE<-10
+          NOVOSALARIO<- (SALARIO*REAJUSTE/100)+SALARIO
+      SENAO
+      FIMSE
+      SE (SALARIO>= 1500)ENTAO
+          REAJUSTE<-5
+          NOVOSALARIO<- (SALARIO*REAJUSTE/100)+SALARIO
+      FIMSE
+
+
+      ESCREVAL("SALÁRIO ANTES DO REAJUSTE: ",SALARIO)
+      ESCREVAL("PERCENTUAL DE AUMENTO APLICADO: ",REAJUSTE,"%")
+      ESCREVAL("VALOR DO AUMENTO R$: ",(SALARIO*REAJUSTE)/100:2:2)
+ESCREVAL("SALARIO APÓS O AUMENTO: ",(SALARIO*REAJUSTE)/100+SALARIO:2:2)
+
+Fimalgoritmo
+
+
+9_Faça um Programa que peça os 3 lados de um triângulo. O programa deverá 
+informar se os valores podem ser um triângulo. Indique, caso os lados formem um 
+triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
+
+
+Algoritmo "TIPO_DE_TRIANGULO"
+
+Var
+L1,L2,L3:INTEIRO
+ESCALENO,EQUILATERO,ISOCELES:LOGICO
+
+Inicio
+      ESCREVAL("INFORME O LADO 1 DO TRIANGULO:")
+      LEIA(L1)
+      ESCREVAL("INFORME O LADO 2 DO TRIANGULO")
+      LEIA(L2)
+      ESCREVAL("INFORME O LADO 3 DO TRIANGULO")
+      LEIA(L3)
+      ESCALENO<- (L1 <> L2) E (L2 <> L3) E (L1 <> L3)
+      EQUILATERO<- (L1 = L2) E (L2 = L3)
+      ISOCELES<- (L1 = L2) E (L2 <>L3) E (L1<>L3)
+      ESCREVAL("O TRIANGULO É ESCALENO?: ",ESCALENO)
+      ESCREVAL("O TRIANGULO É EQUILATERO?: ",EQUILATERO)
+      ESCREVAL("O TRIANGULO É ISOCELES?: ",ISOCELES)
+
+FIMALGORITMO
+
+10_ Uma fruteira está vendendo frutas com a seguinte tabela de preços: 
+
+Até 5kg Acima de 5kg 
+Morango 2,50 por kg 2,20 por kg 
+Maçã 1,80 por kg 1,50 por kg 
+
+Se o cliente comprar mais de 8kg em frutas ou o valor total da compra ultrapassar R$25,00, receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo pra ler a quantidade (em kg) de morangos e a quantidade (em kg) de maçãs adquiridas e escreva o valor a ser pago por cliente. 
+
+Algoritmo "frutaria"
+
+
+var
+   kg_maca, kg_morango: inteiro
+   val_maca, val_morango, valor: real
+inicio
+   escreva("Informe a quantidade (em kg) de morango: ")
+   leia(kg_morango)
+   se (kg_morango > 5) entao
+      val_morango <- kg_morango * 2.20
+   senao
+      val_morango <- kg_morango * 2.50
+   fimse
+   escreva("Informe a quantidade (em kg) de maçã: ")
+   leia(kg_maca)
+   se (kg_maca > 5) entao
+      val_maca <- kg_maca * 1.50
+   senao
+      val_maca <- kg_maca * 1.80
+   fimse
+   valor <- val_morango + val_maca
+   se ((kg_maca + kg_morango) > 8) entao
+      valor <- 0.9 * valor
+   fimse
+   
+   escreval(" Valor total das compras: R$",valor:2:2)
+   
+fimalgoritmo
+
+
