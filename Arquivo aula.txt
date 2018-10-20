@@ -1,3 +1,3 @@
-"HELLO  WORD"
+system.out.println("HELLO  WORD")
 
-git :wq
+
